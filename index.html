@@ -53,7 +53,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>git - a little tale - by Papadakos Panagiotis</title>
+        <title>git - 一个小故事 - by 杜欣</title>
 
         <script>
             (function (d, ua) {
@@ -65,7 +65,7 @@
 
         <meta name="description" content="git - A short story">
         <meta name="author" content="Papadakos Panagiotis" />
-        <meta name="keywords" content="git tutorial, a little tale, impress.js">
+        <meta name="keywords" content="git 指导, 小故事, impress.js">
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" />
@@ -83,11 +83,12 @@
             <div id="title" class="step">
                 <h1>
                     <span class="css"><span class="d3">git</span></span><br>
-                    <span class="transforms"><em>a little tale</em></span>
+                    <span class="transforms"><em>一个小故事</em></span>
                 </h1>
                 <span class="author">
                     <i>by</i><br/>
-                    <span class="name">Panagiotis Papadakos</span> <a href="mailto:papadako@gmail.com">papadako@gmail.com</a>
+                    <span class="name">Panagiotis Papadakos</span> <a href="mailto:papadako@gmail.com">papadako@gmail.com</a><br/>
+                    <span class="name">译: 杜欣</span> <a href="mailto:papadako@gmail.com">clark.duxin@gmail.com</a>
                 </span>
                 <span>
                     <img id="imgGit" src="images/git.svg" alt="git">
@@ -97,66 +98,66 @@
             <!-- First Slide -->
             <div id="intro" class="step" data-x="600" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>intro to VCS</h2>
-                <h3><b> Version Control Systems (VCS)</b></h3>
+                <h3><b> 版本控制系统 (VCS)</b></h3>
                 <ul>
-                    <li><i>wise</i> programmers use a VCS in <b>code development</b></li>
-                    <li><b>tracks</b> and <b>provides control</b> over changes of data</li>
-                    <li><i>more importantly</i> helps <b>collaboration!</b></li>
-                    <li><b>storing</b> versions of code</li>
-                    <li><b>restoring</b> code to a previous version</li>
-                    <li><b>comparing changes</b> over time</li>
-                    <li>understanding <b>what happened</b></li>
-                    <li>see <b>who to blame</b> for a bug</li>
-                    <li>supports the <b>consistency & integrity</b> of data </li>
-                    <li>provides a <b>backup</b> of your work</li>
+                    <li><i>聪明的</i> 程序员在 <b>代码开发</b> 中使用 VCS</li>
+                    <li>基于数据变化<b>追踪</b>并<b>提供控制</b></li>
+                    <li><i>更有益于</i> <b>团队合作!</b></li>
+                    <li><b>存储</b> 代码的不同版本</li>
+                    <li><b>恢复</b> 代码之前一个版本/li>
+                    <li>基于时间来 <b>比较代码</b></li>
+                    <li>理解 <b>发生了什么</b></li>
+                    <li>查看 <b> 谁 </b> 是BUG的元凶</li>
+                    <li>维护数据的<b>一致性 和 完整性</b></li>
+                    <li>为你的工作提供 <b>支援</b></li>
                 </ul>
             </div>
 
             <!-- Some historical clues -->
             <div id="history" class="step" data-x="1700" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>history&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="pillarImg" src="images/pillar.svg" alt="pillar"></h2>
-                <h4><b>Before-VCS epoch</b></h4>
+                <h2>历史&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="pillarImg" src="images/pillar.svg" alt="pillar"></h2>
+                <h4><b>前 VCS 纪元</b></h4>
                 <ul>
-                    <li><b>Lower paleolithic:</b> Keep your own versions</li>
-                    <li><b>Stone-age: </b> Use diff, emails and tars</li>
+                    <li><b>低端的旧石器时代:</b> 维护你自己的版本</li>
+                    <li><b>石器时代: </b> 使用 diff, emails 和 tars</li>
                 </ul>
-                <h4><b>Centralized VCS (CVCS) epoch</b></h4>
+                <h4><b>中心化 VCS (CVCS) 纪元</b></h4>
                 <ul>
-                    <li><b>Bronze age:</b> CVS, a wrong intro </li>
-                    <li><b>Iron age:</b> SVN, perforce </li>
+                    <li><b>青铜器时代:</b> CVS, a wrong intro </li>
+                    <li><b>铁器时代:</b> SVN, perforce </li>
                 </ul>
-                <h4><b>Distributed VCS (DVCS) epoch</b></h4>
+                <h4><b>分布式 VCS (DVCS) 纪元</b></h4>
                 <ul>
-                    <li><b>Modern era:</b> bazaar, arch, monotone, darcs, bitkeeper </li>
+                    <li><b>现代 纪元:</b> bazaar, arch, monotone, darcs, bitkeeper </li>
                 </ul>
-                <h4><b>Linus and the war of (D)VCS</b> <img src="images/torvalds.jpg" alt="Linus Torvalds"></h4>
+                <h4><b>Linus 和 (D)VCS的 的战争</b> <img src="images/torvalds.jpg" alt="Linus Torvalds"></h4>
                 <ul>
-                    <li>Linus was not happy with any of the OS solutions!</li>
-                    <li>He stepped out of Linux development for a month to create his second child, <b>git</b></li>
-                    <li><b>mercurial</b>, another child of the war </li>
-                    <li><b>git wins</b> the war, becomes the standard in OS community, followed by mercurial</li>
+                    <li>Linus 对于所有的开源方案都不满意!</li>
+                    <li>他从 Linux 开发中脱离了一个月去创造了他的第二个孩子, <b>git</b></li>
+                    <li>同样, 还有<b>mercurial</b>, 这场战争里的另一个孩子</li>
+                    <li>最终, <b>git 赢得了</b> 战争的胜利, 成为了开源社区的标准, 并取得了 mercurial 的支持</li>
                 </ul>
             </div>
             <!-- Intro to distributed DVCS -->
             <div id="distributed" class="step" data-x="2800" data-y="-1200" data-z="-3000" data-rotate="100" data-scale="1">
                 <h2>DVCS vs CVCS</h2>
-                <h3>Centralized <img id="imgCentr" src="images/centralized.svg" alt="centralized"></h3>
+                <h3>中心化 <img id="imgCentr" src="images/centralized.svg" alt="centralized"></h3>
                 <ul>
-                    <li>Only a single copy of the repository <b>(unsafe)</b></li>
-                    <li>Server communication for each operation <b>(slow, needs net)</b></li>
-                    <li>Server is offline or corrupted; no work done <b>(offline cost)</b></li>
-                    <li>Everything is stored to the server; even failed things <b>(redundacy)</b></li>
-                    <li><b>Pros:</b> Rather simple interaction <b>(simple but not flexible)</b></li>
+                    <li>代码仓库只有一份拷贝 <b>(不安全)</b></li>
+                    <li>每个操作都需要与服务端通信 <b>(缓慢, 需要网络支持)</b></li>
+                    <li>假如服务端离线或者宕机; 我们就可以下班了 <b>(离线成本)</b></li>
+                    <li>一切都存储在服务器上 <b>(冗余)</b></li>
+                    <li><b>优点:</b> 简单的交互方式 <b>(简单但不灵活)</b></li>
                 </ul>
 
-                <h3>Distributed <img id="imgDistr" src="images/distributed.svg" alt="distributed"></h3>
+                <h3>分布式 <img id="imgDistr" src="images/distributed.svg" alt="distributed"></h3>
                 <ul>
-                    <li>More powerful and flexible workflows <b>(promote collaboration)</b></li>
-                    <li>Each user has its own repository <b>(safety)</b></li>
-                    <li>Operations are done locally <b>(performance)</b></li>
-                    <li>Branches is the way to go <b>(easy to create, delete and merge)</b></li>
-                    <li><b>Cons:</b> Initial checkout is more costly <b>(download the whole history)</b></li>
-                    <li><b>Cons:</b> A little more difficult to grasp UI <b>(interaction overhead)</b> </li>
+                    <li>更加强大和灵活的工作流程  <b>(促进团队合作)</b></li>
+                    <li>每个用户都有自己的代码仓库 <b>(安全)</b></li>
+                    <li>操作都在本地完成 <b>(性能)</b></li>
+                    <li>分支才是真正的修行之道 <b>(易于创建, 删除和合并)</b></li>
+                    <li><b>缺点:</b> 初始化检出是最耗时的 <b>(下载全部历史)</b></li>
+                    <li><b>缺点:</b> 理解 UI 会有一些困难 <b>(交互开销)</b> </li>
                 </ul>
             </div>
             <!-- Have to find a recent comparison and evaluate what is written here! -->
@@ -171,76 +172,76 @@
                         <th><b>git</b></th>
                     </tr>
                     <tr>
-                        <td class='left'><b>Type</b></td>
+                        <td class='left'><b>类型</b></td>
                         <td>CVCS</td>
                         <td>DVCS</td>
                         <td>DVCS</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Storage method</b></td>
-                        <td>Changeset/Snapshot</td>
-                        <td>Changeset</td>
-                        <td>Snapshot</td>
+                        <td class='left'><b>存储方式</b></td>
+                        <td>更改集/快照</td>
+                        <td>更改集</td>
+                        <td>快照</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Learning Curve</b></td>
-                        <td>Easy</td>
-                        <td>Moderate</td>
-                        <td>Steep</td>
+                        <td class='left'><b>学习曲线</b></td>
+                        <td>简单</td>
+                        <td>中等</td>
+                        <td>陡峭</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Developed in</b></td>
+                        <td class='left'><b>基于...开发</b></td>
                         <td>C</td>
                         <td>Python</td>
                         <td>C/perl/shell scripts</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Speed</b></td>
-                        <td>Slow</td>
-                        <td>Fast</td>
-                        <td>Very Fast</td>
+                        <td class='left'><b>速度</b></td>
+                        <td>慢</td>
+                        <td>快</td>
+                        <td>飞</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Branching</b></td>
-                        <td>Easy</td>
-                        <td>Free</td>
-                        <td>Free</td>
+                        <td class='left'><b>分支</b></td>
+                        <td>简单</td>
+                        <td>自由</td>
+                        <td>自由</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Merging</b></td>
-                        <td>Difficult</td>
-                        <td>Pretty easy</>
-                        <td>Piece of cake</td>
+                        <td class='left'><b>合并</b></td>
+                        <td>困难</td>
+                        <td>轻松愉快</td>
+                        <td>天空飘来五个字儿</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Data Integrity</b></td>
-                        <td>Primitive</td>
+                        <td class='left'><b>数据完整性</b></td>
+                        <td>元数据</td>
                         <td>SHA-1</td>
                         <td>SHA-1</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Space Requirements</b></td>
-                        <td>Big</td>
-                        <td>Small (efficient for small projects)</td>
-                        <td>Small (efficient for big projects)</td>
+                        <td class='left'><b>空间需求</b></td>
+                        <td>大</td>
+                        <td>小 (小项目)</td>
+                        <td>小 (大小通吃)</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>History rewriting</b></td>
-                        <td>No</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td class='left'><b>改写历史</b></td>
+                        <td>不可以</td>
+                        <td>可以</td>
+                        <td>顶楼上</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>VCS Collaboration</b></td>
-                        <td>No</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td class='left'><b>VCS 交互</b></td>
+                        <td>不可以</td>
+                        <td>可以</td>
+                        <td>小case</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Integration with IDEs</b></td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
+                        <td class='left'><b>与 IDE 集成</b></td>
+                        <td>可以</td>
+                        <td>可以</td>
+                        <td>别闹了</td>
                     </tr>
                 </table>
             </div>
@@ -248,7 +249,7 @@
             <div id="trends" class="step" data-x="570" data-y="-160" data-rotate="10" data-scale="0.4">
                 <h2>Trends</h2>
                 <img style="float:right" src="images/trends.jpg" alt="Linus Torvalds">
-                <h3><b> git has better marketing</b></h3>
+                <h3><b> git 有更广阔的市场, BTW: <a target='_blank' href="http://mmorejon.github.io/en/blog/2015-trends-configuration-management/">Trends</a> </b></h3>
             </div>
 
             <!--==================================================-->
@@ -256,19 +257,19 @@
 
             <!-- Introduction of us to git -->
             <div id="hi" class="step" data-x="1600" data-y="600" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>hi, I am git</h2>
-                <h3>Who are you?</h3>
+                <h2>嗨, 我是 git</h2>
+                <h3>你是哪位?</h3>
                 <ul>
-                    <li>So, you <u>installed</u> git!</li>
-                    <li>Git has to know some things about you, like your name, email, settings...</li>
-                    <li><code><span class='shell'>$</span> git config --global user.name "John Doe"</code></li>
-                    <li><code><span class='shell'>$</span> git config --global user.email johndoe@example.com</code></li>
-                    <li>To check what git knows about us and other settings</li>
+                    <li>那么, 你 <u>已经安装</u> git 了吧!</li>
+                    <li>Git 必须了解你的一些信息, 比如: 姓名, 邮箱, 设置....</li>
+                    <li><code><span class='shell'>$</span> git config --global user.name "Clark Du"</code></li>
+                    <li><code><span class='shell'>$</span> git config --global user.email duxin@cfilmcloud.com</code></li>
+                    <li>接下来, 检测一下 git 是否已经认识我和我的设置了</li>
                     <li><code><span class='shell'>$</span> git config --list</code><br>
                         <code>
                             <span class='indent'>
-                                user.name=John Doe<br>
-                                user.email=johndoe@example.com<br>
+                                user.name=Clark Du<br>
+                                user.email=duxin@cfilmcloud.com<br>
                                 color.status=auto<br>
                                 color.branch=auto<br>
                                 color.interactive=auto<br>
@@ -281,18 +282,18 @@
             </div>
             <!-- Initialize your first repo -->
             <div id="init" class="step" data-x="2700" data-y="700" data-z="-3000" data-rotate="100" data-scale="1">
-                <h2>your first repo</h2>
+                <h2>你的第一个仓库</h2>
                 <h3>git init <img id='imgInit' src="images/init.svg" alt="init"></h3>
                 <ul>
-                    <li>You can initialize a repo with <code>git init</code></li>
+                    <li>用 <code>git init</code> 来初始化一个仓库</li>
                     <li><code><span class='shell'>$</span> git init tutorial</code><br>
-                    <li>A new directory <code>tutorial</code> is created</li>
-                    <li>Inside <code>tutorial</code>, <code>.git</code> directory holds all repository information</li>
+                    <li>一个崭新的目录 <code>tutorial</code> 就这样被诞生了</li>
+                    <li>在 <code>tutorial</code> 里面, <code>.git</code> 目录保存了仓库所有的信息</li>
                 </ul>
                 <h3>git status</h3>
                 <ul>
-                    <li>At any time you can check your status with <code>git status</code></li>
-                    <li>Rather informative command, but not after init!</li>
+                    <li>你可以通过 <code>git status</code> 随时查看仓库的状态</li>
+                    <li>灰常 NB 的命令, 但现在还不是时候!</li>
                     <li><code><span class='shell'>$</span> git status</code><br>
                         <code>
                             <span class='indent'>
@@ -309,24 +310,24 @@
                 <h2>3 trees +&nbsp;&nbsp;</h2>
                 <h3 id='imgThreeTrees'>three trees <img src="images/threeTrees.svg" alt="add"></h3>
                 <ul>
-                    <li><code><span class="greyBack">working directory</span></code> → sandbox, holds the files<br></li>
-                    <li><code><span class="redBack">index</span></code> → snapshot of changes proposed for next revision<br></li>
-                    <li><code><span class="greenBack">HEAD</span></code> → pointer to last snapshot <br></li>
-                    <li><code>init</code> also creates <code><span class="yellowBack">master</span></code> default & active branch
-                        <br>&nbsp;&nbsp;&nbsp;<i>detached mode</i> → no active branch</li>
-                    <li><code><span class="greenBack">HEAD</span></code> (usually) points where the branch points</li>
+                    <li><code><span class="greyBack">工作目录</span></code> → 沙箱, 掌控着所有文件<br></li>
+                    <li><code><span class="redBack">暂存区</span></code> → 计划提交到下一版本的修改的快照<br></li>
+                    <li><code><span class="greenBack">HEAD</span></code> → 最新快照的指针 <br></li>
+                    <li><code>init</code> 也会创建 <code><span class="yellowBack">master</span></code> 作为默认 & 活动分支
+                        <br>&nbsp;&nbsp;&nbsp;<i>detached 模式</i> → 没有活动分支</li>
+                    <li><code><span class="greenBack">HEAD</span></code> (通常) 指向分支所指位置</li>
                 </ul>
                 <br>
-                <h3>create our first file <img id='imgTouch' src="images/touch.svg" alt="add"></h3>
+                <h3>建立第一个文件 <img id='imgTouch' src="images/touch.svg" alt="add"></h3>
                 <ul>
                     <li><code><span class='shell'>$</span> touch first</code></li>
-                    <li>File is added to <code><span class="greyBack">working directory</span></code></li>
+                    <li>文件被添加到了 <code><span class="greyBack">工作空间</span></code></li>
                 </ul>
                 <h3>git add [&#60;file&#62;]<img id='imgAdd' src="images/add.svg" alt="add"></h3>
                 <ul>
-                    <li>Add content to the staging index</li>
+                    <li>把内容添加到暂存区</li>
                     <li><code><span class='shell'>$</span> git add first</code><br>
-                    <li>File added to  <code><span class="redBack">index</span></code></li>
+                    <li>文件被添加到了  <code><span class="redBack">暂存区</span></code></li>
                 </ul>
             </div>
             <!-- Now commit content to the repo -->
@@ -335,13 +336,13 @@
                 <h3>git commit [&#60;file&#62;]<img id='imgCommit' src="images/commit.svg" alt="add">
                     <span><img id='imgCommit2' src="images/commit2.svg" alt="commit"></span></h3>
                 <ul>
-                    <li>Stores the contents of the index in a new commit object</li>
-                    <li>along with who, when, and why made those changes</li>
-                    <li><i>parent</i> of commit object is the previous commit</li>
-                    <li>Creates a SHA-1 20 byte hash using the above</li>
-                    <li><code><span class="greenBack">HEAD</span></code> and <code><span class="yellowBack">master</span></code> point to new commit</li>
+                    <li>将暂存区的内容存至一个新的提交对象内</li>
+                    <li>同样被存储的还有: 谁, 什么时间以及为什么做出这些改动</li>
+                    <li>提交对象的 <i>parent</i> 就是前一个提交对象</li>
+                    <li>接下来, 用上面的信息创建以 SHA-1 编码的20位哈希码</li>
+                    <li><code><span class="greenBack">HEAD</span></code> 和 <code><span class="yellowBack">master</span></code> 指向新的提交</li>
                     <li><code><span class='shell'>$</span> git commit first</code></li>
-                    <li>Add & commit the file at the same time</li>
+                    <li>也可以将 Add & commit 合并执行</li>
                     <li><code><span class='shell'>$</span> git commit -a first</code><br>
                 </ul>
                 <h3>git log</h3>
@@ -350,8 +351,8 @@
                         <code>
                             <span class='indent'>
                                 *&nbsp;commit <span class="orange">8484f4fccb80e625b7c05cdc214014a32d176777</span> <span class="green">(HEAD)</span><br>
-                                |&nbsp;Author: Panagiotis Papadakos &#60;papadako@gmail.com&#62;<br>
-                                |&nbsp;Date:   Tue Oct 20 01:15:40 2015 +0300<br>
+                                |&nbsp;Author: Clark Du &#60;duxin@cfilmcloud.com<&#62;<br>
+                                |&nbsp;Date:   Tue Oct 27 06:06:26 2015 +0200<br>
                                 |&nbsp;&nbsp;&nbsp;Add some content<br>
                             </span>
                         </code>
@@ -360,25 +361,25 @@
             </div>
             <!-- Now make a new branch -->
             <div id="branch" class="step" data-x="2850" data-y="2800" data-z="-3200" data-rotate="100" data-scale="1">
-                <h2>Grow branches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="cactusImg" src="images/cactus.svg" alt="cactus"></h2>
+                <h2>成长型分支 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="cactusImg" src="images/cactus.svg" alt="cactus"></h2>
                 <h3>git branch &#60;name&#62; <img id='imgBranch' src="images/branch.svg" alt="branch"></h3>
                 <ul>
-                    <li>Branching is a very cheap and widely used operation</li>
-                    <li>Develop features/correct bugs/experiment in isolation</li>
-                    <li>... and delete them without affecting the main history</li>
-                    <li>Just creates a new pointer where <code><span class="greenBack">HEAD</span></code> points</li>
+                    <li>分支创建是非常廉价并被广泛使用的操作</li>
+                    <li>开发需求/修复 Bug/单独实验新功能</li>
+                    <li>... 还有, 删除分支不会影响主干历史</li>
+                    <li>仅仅是创建了一个指向 <code><span class="greenBack">HEAD</span></code> 的指针</li>
                     <li><code><span class='shell'>$</span> git branch featureX && git branch bugY</code><br>
-                    <li>Only one <span class="yellowBack">activeBranch</span> (the rest <span class="pinkBack">notActiveBranches</span>)</li>
-                    <li><code><span class="yellowBack">master</span></code> is the default branch (<code>commit</code> still updates the <code><span class="yellowBack">master</span></code> pointer)</li>
+                    <li>只存在一个 <span class="yellowBack">活动分支</span> (其余都是 <span class="pinkBack">非活动分支</span>)</li>
+                    <li><code><span class="yellowBack">master</span></code> 是默认分支 (<code>commit</code> 同样会移动 <code><span class="yellowBack">master</span></code> 的指针)</li>
                 </ul>
                 <h3>git checkout [&#60;name&#62;] <img id='imgCheckout' src="images/checkout.svg" alt="checkout"></h3>
                 <ul>
-                    <li>Switch to another branch</li>
-                    <li>Updates files in the working tree to match the version
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;in the index or the specified tree</li>
-                    <li><code>&#60;name&#62;</code> a branch name or commit object (if not given, <code><span class="greenBack">HEAD</span></code>) </li>
-                    <li>If modifications cannot be applied <b>cleanly</b><br>
-                        &nbsp;&nbsp;&nbsp;...<code>git</code> <b>won't switch</b> to another branch (use <code>git commit</code>/<code>git stash</code>)</li>
+                    <li>切换分支</li>
+                    <li>更新工作目录的文件
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;用以匹配暂存区或特性目录树上的版本</li>
+                    <li><code>&#60;name&#62;</code> 分支或提交的名称 (默认为 <code><span class="greenBack">HEAD</span></code>) </li>
+                    <li>如果改动不能被<b>干净的</b>应用<br>
+                        &nbsp;&nbsp;&nbsp;...<code>git 则</code> <b>不会切换</b> 分支 (用 <code>git commit</code>/<code>git stash</code> 解决)</li>
                     <li><code><span class='shell'>$</span> git checkout featureX</code><br>
                     </li>
                 </ul>
@@ -388,13 +389,13 @@
                 <h2>merge-α</h2>
                 <h3>git merge &#60;commit&#62; <img id="imgMergeImage" src="images/merge.svg" alt="merging"></h3>
                 <ul>
-                    <li><b>Easy branching without easy merging has no value!</b></li>
-                    <li>Join two or more development histories (branches) together</li>
-                    <li>Example: Made a number of commits in branch <code><span class="yellowBack">featureX</span></code></li>
-                    <li>Incorporate them in <code><span class="pinkBack">master</span></code> by:<br>
+                    <li><b>没有简单合并策略的分支模式是没有前途的!</b></li>
+                    <li>将两个以上开发历史(分支)合并</li>
+                    <li>例子: 在分支 <code><span class="yellowBack">featureX</span></code> 上创建几次提交</li>
+                    <li>把这些提交合并进 <code><span class="pinkBack">master</span></code>分支:<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git checkout master</code><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>git merge featureX</code>
-                    <li>The simplest of all merges: <i>fast forward</i>&nbsp;! </li>
+                    <li>最简单的合并方式: <i>快速合并(fast forward)</i>&nbsp;! </li>
                     <!--<li><code>git</code> has a number of merging policies</li>-->
                 </ul>
             </div>
@@ -409,14 +410,14 @@
                 <h2>merge-β </h2>
                 <h3>git merge &#60;commit&#62; <img id="imgMergeImageSecond" src="images/mergeSecond.svg" alt="merging2"></h3>
                 <ul>
-                    <li><b>A more difficult case!</b></li>
-                    <li>Make a number of commits to <code><span class="yellowBack">featureX</span></code></li>
-                    <li>Then go to <code><span class="yellowBack">master</span></code></li>
-                    <li>Make a number of commits</li>
-                    <li>Merge <code><span class="yellowBack">master</span></code> with <code><span class="pinkBack">featureX</span></code></li>
-                    <li>If branches haven't modified the same lines, <code>git</code> has no problem!</li>
-                    <li>A commit object can have <b>many parents</b></li>
-                    <li>Even if we can fast forward <code>git merge -no-ff</code> will create a new commit</li>
+                    <li><b>一个更复杂的场景!</b></li>
+                    <li>在分支 <code><span class="yellowBack">featureX</span> 上创建几次提交</code></li>
+                    <li>然后, 切换到 <code><span class="yellowBack">master</span></code></li>
+                    <li>再创建几个提交</li>
+                    <li>将 <code><span class="pinkBack">featureX</span></code> 合并到 <code><span class="yellowBack">master</span></code></li>
+                    <li>如果两个分支没有修改相同的行, <code>git</code> 会直接合并!</li>
+                    <li>一个提交对象可以有 <b>多个父节点</b></li>
+                    <li>即使可以快速合并, <code>git merge -no-ff</code> 也会创建一个新的提交</li>
                 </ul>
             </div>
             <div id="mergeSecond1" class="step" data-x="850" data-y="2500" data-z="-3200" data-rotate="100" data-scale="1">
@@ -430,20 +431,20 @@
             <!-- Resolve conflicts -->
             <div id="conflict" class="step" data-x="0" data-y="2150" data-z="-3000" data-rotate="90" data-rotate-x="-30" data-scale="1">
                 <h2>conflicts-γ</h2>
-                <h3 id='imgConflict'>Merging can lead to <b><span class="red">conflicts<img id="conflictsImg" src="images/conflicts.svg" alt="merging2"></span></b></h3>
+                <h3 id='imgConflict'>合并可能会引发 <b><span class="red">冲突<img id="conflictsImg" src="images/conflicts.svg" alt="merging2"></span></b></h3>
                 <ul>
-                    <li><code>git</code> tries hard and is smart enough in avoiding them</li>
-                    <li>But when conflicts occur, <b>no need to be scared!</b></li>
-                    <li>Let them fight and choose the winner<br>
-                        &nbsp;&nbsp;&nbsp; i.e. <b>review</b> the code and <b>resolve</b> them (removing >>>===<<<)</li>
-                    <li><code>git add</code> resolved files and then commit
+                    <li><code>git</code> 会尽可能的去避免冲突</li>
+                    <li>但是万一还是发生了不幸, <b>请你务必不要惊慌失措!</b></li>
+                    <li>让冲突双方 PK, 胜者为王!<br>
+                        &nbsp;&nbsp;&nbsp; 比如: <b>复查</b> 代码并 <b>解决</b> 冲突 (去掉 >>>===<<<)</li>
+                    <li><code>git add</code> 添加修复后的文件, 然后提交
                         <br>
                         <code><span class="indent"><<<<<<< HEAD<br>
-                                I am the bug!<br>
+                                俺是 bug!<br>
                                 =======<br>
-                                No, I am the bug!<br>
+                                不, 我是!<br>
                                 >>>>>>> master<br>
-                                Resolve bug<br></span></code></li>
+                                修复 bug<br></span></code></li>
                 </ul>
             </div>
 
@@ -455,17 +456,15 @@
                 <h2><span class="blueBack">On-line repos!</span></h2>
                 <h3>git remote <img id="imgRemote" src="images/remote.svg" alt="remote"></h3>
                 <ul>
-                    <li>The whole thing is about <b>collaboration!</b></li>
-                    <li><code>git</code> does not have a central repository like <code>SVN</code></li>
-                    <li>Repositories have to be uploaded for sharing</li>
-                    <li>All repositories are <b>equal</b></li>
-                    <li>Isolated environment - manual synchronization</li>
-                    <li>Supported protocols - <b>http, https, git, filesystem</b></li>
-                    <li>Creates pointers like <code>branch</code>, pointing to other repo's commit objects</li>
-                    <li><code>git remote</code> - Create connections & give nick names to online repos</li>
-                    <li><code><span class='shell'>$</span> git remote add forU https://github.com/papadako/git-a-little-tale.git</code>
-                    <li>Remote pointers are updated when we have network traffic</li>
-
+                    <li>它与 <b>团队合作</b> 休戚相关</li>
+                    <li><code>git</code> 没有像 <code>SVN</code> 那样的中心仓库</li>
+                    <li>仓库必须通过上传来进行共享</li>
+                    <li>所有的仓库都是 <b>平等的</b></li>
+                    <li>隔离的环境 - 手动同步</li>
+                    <li>支持的协议- <b>http, https, git, filesystem</b></li>
+                    <li>可以创建 <code>branch</code> 指针, 指向其他仓库的提交对象</li>
+                    <li><code>git remote</code> - 创建连接 & 给他们取个昵称</li>
+                    <li><code><span class='shell'>$</span> git remote add forU http://git.cfilmcloud.com/framework/hare-bundles.git</code>
                 </ul>
             </div>
             <!-- Now clone the two branches -->
@@ -473,11 +472,11 @@
                 <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clone repos, !<img id="sheepImg" src="images/sheep.svg" alt="sheep">&nbsp;&nbsp;</h2>
                 <h3>git clone [&#60;repoName&#62;]<img id="imgClone" src="images/clone.svg" alt="clone"></h3>
                 <ul>
-                    <li><b>Clones</b> a repo locally, into a newly created directory</li>
-                    <li><b>Creates remote branches</b> for each branch in the cloned repo</li>
-                    <li>Default nick name of remote is <code>origin</code> (like  <code>master</code> for <code>init</code>)</li>
-                    <li><b>Checkout an initial branch</b> (cloned repo’s currently active branch)</li>
-                    <li><code><span class='shell'>$</span> git clone https://github.com/papadako/git-a-little-tale.git</code></li>
+                    <li><b>克隆</b> 一个仓库到本地, 并存到一个新的目录</li>
+                    <li>为克隆仓库内的每个分支 <b>创建远程分支</b></li>
+                    <li>远程仓库默认昵称是 <code>origin</code> (就行  <code>master</code> 是 <code>init</code> 的默认分支)</li>
+                    <li><b>切换到一个初始化分支</b> (被克隆分支的当前活动分支)</li>
+                    <li><code><span class='shell'>$</span> git clone http://git.cfilmcloud.com/framework/hare-bundles.git</code></li>
                 </ul>
                 <br><br><br><br><br><br>
 
@@ -487,11 +486,11 @@
                 <h2><img id="tazImg" src="images/taz.svg" alt="taz">, fetch it!</h2>
                 <h3>git fetch [&#60;remote&#62;]<img id='imgFetch' src="images/fetch.svg" alt="fetch"></h3>
                 <ul>
-                    <li>Brings commits from online repo to local</li>
-                    <li>Does not merge the changes though</li>
-                    <li>Integration of changes:  a two step process</li>
-                    <li><code><span class='shell'>$</span>git fetch origin</code> (fetches all online branches of remote <code>origin</code>)</li>
-                    <li><code><span class='shell'>$</span>git fetch origin bname</code> (fetches only <code>origin/bname</code>)</li>
+                    <li>将线上仓库的提交取到本地</li>
+                    <li>但是不会合并任何改动</li>
+                    <li>改动的集成:  两种方式</li>
+                    <li><code><span class='shell'>$</span>git fetch origin</code> (获取 <code>origin</code> 全部的线上分支)</li>
+                    <li><code><span class='shell'>$</span>git fetch origin bname</code> (只获取 <code>origin/bname</code> 分支)</li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
@@ -500,12 +499,12 @@
                 <h2>Now, pull!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="canoeImg" src="images/canoe.png" alt="canoe"></h2>
                 <h3>git pull [&#60;remote&#62;]  <img id='imgPull' src="images/pull.svg" alt="pull"></h3>
                 <ul>
-                    <li>Merging upstream changes into a local repository is a common task</li>
-                    <li><code>pull</code> makes this two step process in a single step</li>
-                    <li><code><span class='shell'>$</span> git pull</code> is the same as:<br>
+                    <li>获取上游的最新改动, 然后合并进本地仓库是很常见的任务</li>
+                    <li><code>pull</code> 将这两个处理操作合二为一</li>
+                    <li><code><span class='shell'>$</span> git pull</code> 等价于:<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git fetch &#60;remote&#62;</code><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><span class='shell'>$</span> git merge origin/&#60;current-branch&#62;</code></li>
-                    <li>Can lead to conflicts as any other <code>merge</code></li>
+                    <li>当然也可能会引发合并冲突(与正常 <code>merge</code> 一样)</li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
@@ -514,11 +513,11 @@
                 <h2>Push, push!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="babyImg" src="images/baby.png" alt="baby"></h2>
                 <h3>git push [&#60;remote&#62;][&#60;branch&#62;]<img id='imgPush' src="images/push.svg" alt="push"></h3>
                 <ul>
-                    <li>Publish all commited local changes to a central repository</li>
-                    <li>Creates/updates a local branch in the destination repository</li>
-                    <li>Tags are not automatically sent (use <code>--all</code> or <code>--tags</code> flags)</li>
-                    <li>If <b>non-fast-forward merge</b>, push is <b>not permitted</b> (will change commits)</li>
-                    <li>Use <code>--force</code> if you really need this <span class="red"><b>CAUTION</b></span></li>
+                    <li>将所有已提交的本地改动发布到一个中心仓库</li>
+                    <li>将一个本地分支 创建/更新 到目的仓库</li>
+                    <li>Tags 不会自动发送(使用 <code>--all</code> 或 <code>--tags</code>)</li>
+                    <li>如果是 <b>非快速合并</b>, push <b>是被禁止的</b> (会改变提交对象)</li>
+                    <li>如果必须这么做的话, 使用 <code>--force</code>, 请务必<span class="red"><b>谨慎操作</b></span></li>
                 </ul>
                 <br><br><br><br><br><br><br><br><br>
             </div>
@@ -529,21 +528,21 @@
                 <h2>dangerrr!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="dangerImg" src="images/danger.svg" alt="danger"></h2>
                 <h3>git rebase (harder collaboration)</h3>
                 <ul>
-                    <li>User can change the history</li>
-                    <li>Useful for <b>non-pushed</b> commits only, else collaboration is harder</li>
+                    <li>用户可能会改变历史</li>
+                    <li>只对 <b>非推送</b> 提交有好处, else collaboration is harder</li>
                 </ul>
-                <h3>git reset [&#60;name&#62;](lose commits)</h3>
+                <h3>git reset [&#60;name&#62;](丢失提交)</h3>
                 <ul>
-                    <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code> to specific commit</li>
-                    <li><code><span class="redBack">index</span></code> and <code><span class="greyBack">working directory</span></code> do not change</li>
+                    <li>移动 <code><span class="yellowBack">分支</span></code>, <code><span class="greenBack">HEAD</span></code> 到指定提交上</li>
+                    <li><code><span class="redBack">暂存区</span></code> and <code><span class="greyBack">工作目录</span></code> 不会改变</li>
                 </ul>
-                <h3>git rm (lose code)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
+                <h3>git rm (丢失代码)<img id='imgDanger' src="images/dangerosity.svg" alt="dangerosity"></h3>
                 <ul>
-                    <li>Remove file from <code><span class="redBack">index</span></code>  or from <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code></li>
+                    <li>将 <code><span class="redBack">暂存区</span></code> 或 <code><span class="redBack">暂存区</span></code>和<code><span class="greyBack">工作目录</span></code> 内文件移除</li>
                 </ul>
-                <h3>git reset --hard [&#60;name&#62;]<br>(lose code + commits)</h3>
+                <h3>git reset --hard [&#60;name&#62;]<br>(丢失代码及提交)</h3>
                 <ul>
-                    <li>Move <code><span class="yellowBack">branch</span></code>, <code><span class="greenBack">HEAD</span></code>, <code><span class="redBack">index</span></code>  and <code><span class="greyBack">working directory</span></code> to specific commit</li>
+                    <li>移动 <code><span class="yellowBack">分支</span></code>, <code><span class="greenBack">HEAD</span></code>, <code><span class="redBack">暂存区</span></code>  和 <code><span class="greyBack">工作目录</span></code> 到指定提交</li>
                 </ul>
             </div>
             <!-- Rest of other useful commands -->
@@ -551,63 +550,60 @@
                 <h2>et al.&nbsp;&nbsp;</h2>
                 <h4>git tag</h4>
                 <ul class="indent">
-                    <li>Add a label in a commit object</li>
+                    <li>在提交对象上添加一个标签</li>
                     <li><code>git tag -a v4.4.4 -m 'my lucky version'</code></li>
                 </ul>
                 <h4>git stash</h4>
                 <ul  class="indent">
-                    <li>If active branch is dirty and have <b>to quickly checkout another branch</b></li>
-                    <li><code>git stash</code> adds the modified files and staged changes in a <b>stack</b></li>
-                    <li><code>git stash pop</code> re-inserts the files to the current branch</li>
+                    <li>如果活动分支不干净, 但是我们却必须 <b>快速切换到另一个分支</b></li>
+                    <li><code>git stash</code> 将改动的文件和暂存区的改动放进一个<b>栈</b>内</li>
+                    <li><code>git stash pop</code> 重新把改动插入到当前分支</li>
                 </ul>
                 <h4>git bisect</h4>
                 <ul  class="indent">
-                    <li>Use binary search to <b>find which commit introduced a bug</b></li>
+                    <li>使用二分法来 <b>查找到底是哪次提交导致的 bug</b></li>
                 </ul>
                 <h4>git revert</h4>
                 <ul  class="indent">
-                    <li><b>Revert a commit</b> and <b>commit the change</b></li>
+                    <li><b>回退一次提交</b> 并 <b>将提交回退需要的改动</b></li>
                 </ul>
-                <h4>git mv, show, cherry pick, blame, etc.</h4>
+                <h4>git mv, show, cherry pick, blame, 等等.</h4>
                 <br>
-                <h4> There is no file <b>lock</b> command, since there is no server!</h4>
+                <h4> 命令都不会导致文件 <b>加锁</b>, 因为不存在服务器!</h4>
                 <ul  class="indent">
-                    <li>No locking, means <b>better parallelism & collaboration!</b></li>
+                    <li>没有锁, 意味着 <b>更好的并行性 & 合作性!</b></li>
                 </ul>
             </div>
             <!-- Tips for work -->
             <div id="tips" class="step" data-x="-3900" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
                 <h2>tips</h2>
-                <h3>for you, not for the waiter!<img id="imgTips" src="images/waiter.svg" alt="init"></h3>
+                <h3>是建议, 不是小费!<img id="imgTips" src="images/waiter.svg" alt="init"></h3>
                 <ul>
-                    <li><b>git tracks content</b> not files</li>
-                    <li>be careful with <code>git mv</code> (commit both the old and new file)</li>
-                    <li><b>commit often</b> (easier code review, bug tracking and merging)</li>
-                    <li><b>pull master often</b> (reduces conflicts)</li>
-                    <li>keep <b>binary files</b> in another repository (overhead per each <code>clone</code>)</li>
-                    <li>make sure commits pass tests and compile cleanly (helps collaboration)</li>
-                    <li><b>delete branches</b> that <b>you are sure</b> are unneeded! (branch overhead)</li>
-                    <li>check which <b>files you are committing</b> (stop poisoning history)</li>
-                    <li>do not commit passwords (they will always be in the history)</li>
-                    <li>when changes are pushed, you can't take them back (almost)</li>
-                    <li><b>be careful about code formatting</b><br>
-                        &nbsp;&nbsp;&nbsp;→&nbsp;changes are hidden in noise<br>
-                        &nbsp;&nbsp;&nbsp;→&nbsp;produce conflicts<br>
-                        &nbsp;&nbsp;&nbsp;→&nbsp;make explicit commits for formatting<br></li>
+                    <li><b>git 追踪内容</b> 而不是文件</li>
+                    <li>要小心使用 <code>git mv</code> (同时提交旧的和新的文件)</li>
+                    <li><b>频繁提交代码</b> (易于 review, bug 追查及合并</li>
+                    <li><b>频繁拉取更新</b> (减少冲突)</li>
+                    <li>把 <b>二进制文件</b> 存放在另一个仓库 (<code>clone</code> 开销)</li>
+                    <li>确保你的提交编译成功并通过测试 (有助于团队合作)</li>
+                    <li><b>移除</b> 那些 <b>你确认</b> 不再需要的 <b>分支</b>! (分支开销)</li>
+                    <li>检查 <b>你要提交的文件</b> (防止污染历史记录)</li>
+                    <li>不要提交密码信息 (信息会永存于历史内)</li>
+                    <li>当改动被推送后, 你不能把退回它们</li>
+                    <li><b>注意你的代码格式</b><br>
                 </ul>
             </div>
             <!-- Intro to workflows. Vincent provided approval for using them -->
             <div id="workflows" class="step" data-x="-2800" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>workflows</h2>
-                <h3>Centralized (SVN like) <img id="imgWorkflows" src="images/git-model@2x.png" alt="workflows"></h3>
+                <h2>工作流程</h2>
+                <h3>中心化 (类SVN) <img id="imgWorkflows" src="images/git-model@2x.png" alt="workflows"></h3>
                 <ul>
-                    <li>Someone initializes a central branch <b>(master)</b></li>
-                    <li>Everybody clones the central repository</li>
-                    <li>Each one works to the code (edit, stage, commit)</li>
-                    <li>Upload work in master <code>git push origin master</code></li>
-                    <li>If trees have diverged, you have first to <code>git pull</code></li>
+                    <li>张三初始化一个中心分支 <b>(master)</b></li>
+                    <li>所有人克隆这个中心仓库</li>
+                    <li>每个人改动代码 (编辑, 保存, 提交)</li>
+                    <li>上传改动到中心分支 <code>git push origin master</code></li>
+                    <li>如果提交树有分歧, 需要首先 <code>git pull</code></li>
                 </ul>
-                <h3>Decentralized <img id="imgWorkflows2" src="images/centr-decentr@2x.png" alt="workflows"></h3>
+                <h3>去中心化 <img id="imgWorkflows2" src="images/centr-decentr@2x.png" alt="workflows"></h3>
                 <br><br><br><br><br><br><br><br>
                 <span class="thanks">
                     Sketches by Vincent Driessen<br>
@@ -618,7 +614,7 @@
             </div>
             <!-- Online repositories/services -->
             <div id="repositories" class="step" data-x="-1700" data-y="-1200" data-z="-3200" data-rotate="80" data-scale="1">
-                <h2>online repos</h2>
+                <h2>在线仓库</h2>
                 <table id="t02">
                     <tr>
                         <td class='hidden'> </td>
@@ -627,46 +623,46 @@
                         <th><b>gitlab</b></th>
                     </tr>
                     <tr>
-                        <td class='left'><b>DVCS</b></td>
+                        <td class='left'><b>版本控制系统</b></td>
                         <td>git & hg</td>
                         <td>hg & git</td>
                         <td>git</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Free public repos</b></td>
-                        <td>Yes <br>(unlimited members)</td>
-                        <td>Yes <br>(team < 6)</td>
+                        <td class='left'><b>公有仓库免费</b></td>
+                        <td>Yes <br>(人数不限)</td>
+                        <td>Yes <br>(团队人数 < 6)</td>
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Free private repos</b></td>
+                        <td class='left'><b>私有仓库免费</b></td>
                         <td>No</td>
-                        <td>Yes <br>(team < 6 - unlimited for academy)</td>
+                        <td>Yes <br>(团队人数 < 6)</td>
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Size of repos</b></td>
-                        <td>Unlimited</td>
+                        <td class='left'><b>仓库空间</b></td>
+                        <td>无限</td>
                         <td>2Gb</td>
                         <td>10Gb</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Deployed</b></td>
+                        <td class='left'><b>部署</b></td>
                         <td>Cloud</td>
                         <td>Cloud</td>
-                        <td>Cloud or own server (paid)</td>
+                        <td>Cloud 或 自由服务器 (付费)</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Issues</b></td>
+                        <td class='left'><b>缺陷跟踪</b></td>
                         <td>Yes</td>
                         <td>Yes</td>
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Social Aspect</b></td>
-                        <td>Strong (OS)</td>
-                        <td>Not strong</td>
-                        <td>New kid on the block</td>
+                        <td class='left'><b>社交方面</b></td>
+                        <td>强(follow, watch, pr, issue, org, explore)</td>
+                        <td>不强</td>
+                        <td>起步阶段</td>
                     </tr>
                     <tr>
                         <td class='left'><b>Pull requests</b></td>
@@ -681,15 +677,15 @@
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Project Deployment</b></td>
+                        <td class='left'><b>项目部署</b></td>
                         <td>No</td>
                         <td>No</td>
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td class='left'><b>Code Statistics</b></td>
-                        <td>Best</td>
-                        <td>Moderate</td>
+                        <td class='left'><b>代码统计信息</b></td>
+                        <td>最强</td>
+                        <td>一般</td>
                         <td>?</td>
                     </tr>
                 </table>
@@ -697,10 +693,10 @@
 
             <!-- Dancing with code. Video of hippalus -->
             <div id="hippalus" class="step" data-x="-600" data-y="-1200" data-z="-3000" data-rotate="80" data-scale="1">
-                <h2>Do you dance?&nbsp;&nbsp;</h2>
-                <h3>Yes, with code!</h3>
+                <h2>你会跳舞吗?&nbsp;&nbsp;</h2>
+                <h3>当然, 与码共舞!</h3>
                 <h4><a href="http://www.ics.forth.gr/isl/Hippalus">hippalus</a>, a Preference-enriched Faceted Search (PFS) system</h4>
-                <h4><i>Video shows the history of the code</i></h4>
+                <h4><i>视频中展示了它的代码历史</i></h4>
                 <video id="hippalusVideo" preload="auto" loop autoplay width="1024" height="768">
                     <source src="video/hippalus.mp4" type="video/mp4">
                     Your browser does not support the video tag.
